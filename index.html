@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/img/ico.png" rel="icon" />
     <link href="assets/img/ico.png" rel="apple-touch-icon" />
-    <title>Hello 🙋‍♂️</title>
+    <title>Hello!</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script
@@ -28,28 +28,43 @@
       }
     </style>
   </head>
-  <body class="bg-gradient-to-r from-blue-100 to-purple-100 p-10">
+  <body class="bg-gradient-to-r from-blue-100 to-purple-100 p-4 sm:p-10">
     <!-- Main Container -->
-    <div class="max-w-4xl mx-auto bg-white shadow-lg p-8 rounded-lg">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg p-6 sm:p-8 rounded-lg">
       <!-- Header Section -->
-      <div class="flex justify-between items-start border-b pb-6 mb-6">
-        <div>
+      <!-- Header Section -->
+      <div
+        class="flex flex-col items-center sm:flex-row sm:justify-between sm:items-center border-b pb-6 mb-6"
+      >
+        <div class="text-center sm:text-left">
           <h1 class="text-5xl font-bold text-gray-900">Aashish Pawar</h1>
           <h2 class="text-2xl font-semibold text-indigo-600">
             Backend Engineer/ AI Engineer
           </h2>
         </div>
-        <div class="text-right">
+        <div
+          class="mt-4 flex flex-wrap justify-center items-center space-x-4 sm:mt-0 sm:flex-col sm:items-end sm:space-x-0 sm:space-y-1"
+        >
           <p class="text-gray-600">
-            <a href="mailto:emailforashish511@gmail.com">📞 +61-426-XXX-XXX</a>
+            <a
+              href="mailto:emailforashish511@gmail.com"
+              class="hover:text-blue-500"
+              >📞 +61-426-XXX-XXX</a
+            >
           </p>
           <p class="text-gray-600">
-            <a href="mailto:emailforashish511@gmail.com"
+            <a
+              href="mailto:emailforashish511@gmail.com"
+              class="hover:text-blue-500"
               >✉️ emailforashish511</a
             >
           </p>
           <p class="text-gray-600">
-            <a href="#">🔗 in/ashishpawar517</a>
+            <a
+              href="https://www.linkedin.com/in/ashish-pawar511/"
+              class="hover:text-blue-500"
+              >🔗 in/ashishpawar517</a
+            >
           </p>
           <p class="text-gray-600">📍 Sydney, NSW</p>
         </div>
@@ -80,7 +95,9 @@
       <!-- Skills Section -->
       <section class="mb-5">
         <h3 class="text-xl font-semibold text-gray-800">Skills</h3>
-        <div class="grid grid-cols-3 gap-6 mt-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4"
+        >
           <div>
             <h4 class="text-lg font-bold text-indigo-600">Frontend</h4>
             <ul class="list-disc list-inside text-gray-600 mt-2">
@@ -283,75 +300,147 @@
       </section>
 
       <section>
-      <!-- Socials Section -->
-      <h3 class="text-xl font-semibold text-gray-800 p-1">Socials</h3>
-      <div class="flex flex-wrap items-center space-x-6 mt-4">
-        <a
-          href="https://github.com/ashishpawar517"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >GitHub</a
-        >
-        <a
-          href="https://codeforces.com/profile/codefierce"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >Codeforces</a
-        >
-        <a
-          href="https://www.codechef.com/users/codefierce"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >CodeChef</a
-        >
-        <a
-          href="https://atcoder.jp/users/codefierce"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >AtCoder</a
-        >
+        <h3 class="text-xl font-semibold text-gray-800">Socials</h3>
 
-        <a
-          href="https://www.hackerrank.com/profile/pawarashish564"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >Hackerrank</a
+        <!-- mobile/tablet: 4‑col grid -->
+        <div
+          class="grid grid-cols-4 sm:grid-cols-4 gap-2 mt-4 justify-items-center lg:hidden"
         >
-        <a
-          href="https://www.hackerearth.com/@pawarashish564"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >Hackerrank</a
-        >
-        <a
-          href="https://leetcode.com/ashishpawar517/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >LeetCode</a
-        >
-        <a
-          href="https://monkeytype.com/profile/ashishpawar517"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >MonkeyType</a
-        >
-        <a
-          href="https://www.kaggle.com/ashishpawar511"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
-          >Kaggle</a
-        >
-     </section>
-      </div>
+          <a
+            href="https://github.com/ashishpawar517"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200 hidden sm:block"
+            >GitHub</a
+          >
+
+          <a
+            href="https://codeforces.com/profile/codefierce"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Codeforces</a
+          >
+          <a
+            href="https://www.codechef.com/users/codefierce"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >CodeChef</a
+          >
+          <a
+            href="https://atcoder.jp/users/codefierce"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >AtCoder</a
+          >
+
+          <a
+            href="https://www.hackerrank.com/profile/pawarashish564"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Hackerrank</a
+          >
+          <a
+            href="https://www.hackerearth.com/@pawarashish564"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Hackerrank</a
+          >
+          <a
+            href="https://leetcode.com/ashishpawar517/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >LeetCode</a
+          >
+          <a
+            href="https://monkeytype.com/profile/ashishpawar517"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >MonkeyType</a
+          >
+          <a
+            href="https://www.kaggle.com/ashishpawar511"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Kaggle</a
+          >
+        </div>
+        <!-- desktop only: original flex row -->
+        <div class="hidden lg:flex flex-wrap items-center space-x-6 mt-4">
+          <a
+            href="https://github.com/ashishpawar517"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200 hidden sm:block"
+            >GitHub</a
+          >
+
+          <a
+            href="https://codeforces.com/profile/codefierce"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Codeforces</a
+          >
+          <a
+            href="https://www.codechef.com/users/codefierce"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >CodeChef</a
+          >
+          <a
+            href="https://atcoder.jp/users/codefierce"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >AtCoder</a
+          >
+
+          <a
+            href="https://www.hackerrank.com/profile/pawarashish564"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Hackerrank</a
+          >
+          <a
+            href="https://www.hackerearth.com/@pawarashish564"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Hackerrank</a
+          >
+          <a
+            href="https://leetcode.com/ashishpawar517/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >LeetCode</a
+          >
+          <a
+            href="https://monkeytype.com/profile/ashishpawar517"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >MonkeyType</a
+          >
+          <a
+            href="https://www.kaggle.com/ashishpawar511"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-600 hover:text-blue-500 hover:font-bold transition-colors duration-200"
+            >Kaggle</a
+          >
+        </div>
+      </section>
     </div>
   </body>
 </html>
