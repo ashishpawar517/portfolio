@@ -120,7 +120,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experice" class="mb-5">
+    <section id="experience" class="mb-5">
       <h3 class="text-xl font-semibold text-gray-800 text-center sm:text-left">
         Experience
       </h3>
@@ -350,6 +350,62 @@
       </div>
     </section>
   </div>
+  <script>
+    const sectionIds = [
+      'summary',
+      'skills',
+      'experience',
+      'projects',
+      'certs',
+      'publications',
+      'strengths',
+      'socials'
+    ];
+
+    // Section click tracking
+    sectionIds.forEach(id => {
+      const section = document.getElementById(id);
+      if (section) {
+        section.addEventListener('click', () => {
+          gtag('event', 'section_click', {
+            'event_category': 'Section',
+            'event_label': id
+          });
+        });
+      }
+    });
+
+    // Section view tracking (only once per section)
+    const viewedSections = new Set();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !viewedSections.has(entry.target.id)) {
+          gtag('event', 'section_view', {
+            'event_category': 'Section',
+            'event_label': entry.target.id
+          });
+          viewedSections.add(entry.target.id);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sectionIds.forEach(id => {
+      const section = document.getElementById(id);
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    // Outbound link tracking
+    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+      link.addEventListener('click', function () {
+        gtag('event', 'outbound_click', {
+          'event_category': 'Outbound Link',
+          'event_label': this.href
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
